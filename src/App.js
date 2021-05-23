@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import Gap from './components/Gap';
+import Average from './components/Average';
+import Sum from './components/Sum';
+import Sort from './components/Sort';
+
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h1>Exercicio React-redux #01</h1>
+     <div className="linha">
+      <Gap 
+      ></Gap>
+     </div>
+     <div className="linha">
+      <Average></Average>
+      <Sum></Sum>
+      <Sort></Sort>
+     </div>
     </div>
   );
 }
